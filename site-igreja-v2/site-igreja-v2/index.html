@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horários dos Cultos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <!-- Coloque o arquivo da logo na pasta com o nome logo.png. Se não existir, a caixa some sozinha. -->
+    <div class="logo-box" id="logo-box">
+      <img src="logo.png" alt="Logo da igreja" onerror="document.getElementById('logo-box').remove()">
+    </div>
+    <h1 id="nome-igreja">Nome da Igreja</h1>
+    <p>Horários dos cultos e atividades</p>
+  </header>
+
+  <main>
+    <section id="destaque" aria-live="polite"></section>
+
+    <h2 class="titulo-secao">Programação da semana</h2>
+    <section id="horarios" aria-live="polite">
+      <p class="aviso">Carregando horários...</p>
+    </section>
+
+    <section class="contato">
+      <h2>Onde estamos</h2>
+      <p id="endereco">Rua Exemplo, 123 - Bairro - Cidade/UF</p>
+      <a id="link-mapa" class="botao" href="#" target="_blank" rel="noopener">Ver no mapa</a>
+      <a id="link-whatsapp" class="botao secundario" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <small>Horários sujeitos a alteração.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
