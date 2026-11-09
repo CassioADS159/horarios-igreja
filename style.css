@@ -1,0 +1,54 @@
+:root {
+  --azul: #2f4a7d;
+  --azul-escuro: #1f3763;
+  --fundo: #f4f6fa;
+  --texto: #1d2433;
+  --borda: #2e8b6a;   /* cor das linhas da tabela */
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: var(--fundo); color: var(--texto); line-height: 1.5; }
+
+/* Cabeçalho do site (azul e branco) */
+header.topo {
+  background: linear-gradient(160deg, var(--azul-escuro), var(--azul));
+  color: #fff;
+  text-align: center;
+  padding: 32px 16px 36px;
+}
+.logo-box { display: inline-block; background: #fff; border-radius: 18px; padding: 14px 20px; margin-bottom: 14px; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+.logo-box img { display: block; max-width: min(300px, 70vw); max-height: 170px; height: auto; }
+header.topo h1 { margin: 0 0 4px; font-size: 1.7rem; }
+header.topo p { margin: 0; opacity: .9; }
+
+main { max-width: 640px; margin: 0 auto; padding: 16px; }
+header.topo { padding-bottom: 44px; }
+
+.titulo-secao { font-size: 1.05rem; color: var(--azul); margin: 22px 4px 10px; letter-spacing: .02em; }
+
+/* Próximo culto (destaque) */
+.proximo { position: relative; background: linear-gradient(135deg, #2b57c9, var(--azul-escuro)); color: #fff; border-radius: 18px; padding: 18px 20px 20px; box-shadow: 0 6px 18px rgba(31,55,99,.28); margin-top: -8px; }
+.rotulo { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; background: rgba(255,255,255,.18); padding: 3px 10px; border-radius: 999px; }
+.proximo-nome { margin: 10px 0 2px; font-size: 1.5rem; font-weight: 800; line-height: 1.2; }
+.proximo-info { margin: 0; font-size: 1.05rem; opacity: .95; }
+.proximo-quando { position: absolute; top: 16px; right: 16px; background: #fff; color: var(--azul-escuro); font-weight: 800; font-size: .85rem; padding: 4px 12px; border-radius: 999px; }
+
+/* Cartão de cada dia */
+.dia { background: #fff; border-radius: 16px; margin-bottom: 12px; padding: 14px 16px 6px; border: 2px solid transparent; box-shadow: 0 1px 5px rgba(0,0,0,.07); }
+.dia.hoje { border-color: #2b57c9; }
+.dia-topo { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.sigla { flex: none; width: 46px; height: 46px; border-radius: 50%; background: #e8eef9; color: var(--azul); font-weight: 800; font-size: .8rem; display: flex; align-items: center; justify-content: center; }
+.dia.hoje .sigla { background: #2b57c9; color: #fff; }
+.dia-topo h3 { margin: 0; font-size: 1.15rem; color: var(--azul-escuro); }
+.tag-hoje { margin-left: auto; background: #2b57c9; color: #fff; font-size: .72rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: .05em; }
+.culto { padding: 10px 0 12px; border-top: 1px solid #e9edf4; }
+.culto .nome { margin: 0 0 8px; font-weight: 700; font-size: 1.02rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { background: #e8eef9; color: var(--azul-escuro); font-weight: 700; font-size: .95rem; padding: 6px 12px; border-radius: 999px; white-space: nowrap; }
+.culto .obs { margin: 8px 0 0; font-size: .85rem; color: #5b6475; }
+
+.contato { background: #fff; border-radius: 12px; padding: 16px; margin-top: 20px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.contato h2 { margin-top: 0; color: var(--azul); }
+.botao { display: inline-block; margin: 6px 4px; padding: 10px 18px; border-radius: 8px; background: var(--azul); color: #fff; text-decoration: none; font-weight: 600; }
+.botao.secundario { background: #1f9d55; }
+.aviso { text-align: center; color: #5b6475; }
+footer { text-align: center; padding: 16px; color: #5b6475; }
